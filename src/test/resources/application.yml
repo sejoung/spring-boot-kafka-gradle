@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      max-poll-records: 2000
+    listener:
+      concurrency: 1
+      ack-mode: manual
+      type: single
+topic:
+  single: test-topic
+  list: test-list-topic

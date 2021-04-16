@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      max-poll-records: 2000
+    bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
+    listener:
+      concurrency: 1
+      ack-mode: manual
+      type: batch
+
+topic:
+  single: test-topic
+  list: test-list-topic
