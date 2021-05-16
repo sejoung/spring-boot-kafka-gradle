@@ -1,5 +1,18 @@
 # spring-boot-kafka-gradle
 
+## 카프카 설정후 테스트 
+
+```
+docker-compose -f docker-compose-kafka.yml up -d
+
+docker-compose -f docker-compose-kafka.yml down
+
+docker-compose -f docker-compose-kafka.yml ps
+
+```
+
+## 임베디드 카프카 사용 테스트
+
 KafkaConsumer.java
 
 ```java
@@ -78,3 +91,6 @@ KafkaConsumerTest.java
     }
 
 ```
+
+# 참고
+* [docker-kafka](https://github.com/sejoung/docker-kafka)

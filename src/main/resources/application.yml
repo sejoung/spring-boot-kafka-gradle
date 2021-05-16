@@ -1,4 +1,15 @@
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+  tomcat:
+    uri-encoding: utf-8
+    max-connections: 20
 spring:
+  h2:
+    console:
+      enabled: true
   kafka:
     consumer:
       auto-offset-reset: earliest
@@ -9,7 +20,13 @@ spring:
       concurrency: 1
       ack-mode: manual
       type: batch
+    producer:
+      acks: all
+  jpa:
+    show-sql: true
+    open-in-view: false
 
 topic:
   single: test-topic
   list: test-list-topic
+  event: event-topic

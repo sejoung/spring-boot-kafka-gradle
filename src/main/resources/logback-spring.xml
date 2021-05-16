@@ -3,7 +3,7 @@
 	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
 	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
 	<logger name="org.springframework" level="INFO" />
-	<logger name="io.lific.kafka" level="DEBUG" />
+	<logger name="io.github.sejoung" level="DEBUG" />
 	<root level="INFO">
 		<appender-ref ref="CONSOLE" />
 	</root>
