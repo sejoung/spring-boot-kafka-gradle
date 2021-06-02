@@ -29,3 +29,4 @@ spring:
 topic:
   single: test-topic
   list: test-list-topic
+  event: test-topic
