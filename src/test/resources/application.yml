@@ -22,6 +22,7 @@ spring:
       type: batch
     producer:
       acks: all
+      compression-type: snappy
   jpa:
     show-sql: true
     open-in-view: false
