@@ -20,7 +20,7 @@ import io.github.sejoung.kafka.dto.CustomMessage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Configuration
+//@Configuration
 public class DLQConsumer {
 
 	@Bean
